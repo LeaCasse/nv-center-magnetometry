@@ -1,8 +1,8 @@
 # NV-center internship archive and clean re-analysis
 
-This repository reorganizes a first-year Master's internship on **NV-center-based quantum sensing** into a clean, reproducible, English-language GitHub structure.
+This repository reorganizes a first-year Master's internship on **NV-center-based quantum sensing**.
 
-The original material mixed raw microscope exports, ODMR scans, presentation slides, exploratory scripts, notes, screenshots, and large image dumps. This repo keeps the pieces that are directly useful for understanding and reusing the project:
+The original material mixed raw microscope exports, ODMR scans, presentation slides, exploratory scripts, notes, screenshots, and large image dumps... all of this in french. This repo keeps the pieces that are directly useful for understanding and reusing the project:
 
 - **raw confocal data** for several collection/filter configurations,
 - **raw ODMR spectra** across microwave power and waveplate-angle settings,
@@ -14,7 +14,7 @@ The original material mixed raw microscope exports, ODMR scans, presentation sli
 
 ## Scientific scope
 
-The internship was centered on **NV-center magnetometry** rather than quantum computing. According to the original report, the work eventually relied on the **commercial Qnami ProteusQ** setup after a technical issue on the in-house objective, and the main calibrated tip was **FR076-9C-3B17**. The main themes were:
+The internship was centered on **NV-center magnetometry** and the work eventually relied on the **commercial Qnami ProteusQ** setup after a technical issue on the in-house objective, and the main calibrated tip was **FR076-9C-3B17**. The main themes were:
 
 1. understanding the NV center as a room-temperature quantum sensor,
 2. optimizing fluorescence collection with different confocal/filter configurations and fiber alignment,
@@ -51,17 +51,6 @@ nv-center-stage/
     └── legacy_notes/
 ```
 
-## What was deliberately compacted
-
-A large miscellaneous image dump was **not copied wholesale** because much of it was redundant, unrelated, or not needed to understand the stage. Instead, the repo keeps:
-
-- the raw data required for re-analysis,
-- the presentation slide exports,
-- selected overview contact sheets,
-- the original scripts for traceability.
-
-This makes the repository much more usable than a direct archive dump.
-
 ## Quick start
 
 ```bash
@@ -89,16 +78,3 @@ The original report also states explicit reference values that are useful when p
 - saturation fit: `I0 = 180.31 kcounts/s`
 - saturation power: `Psat = 114.64 µW`
 - best sensitivity reported on the Qnami setup: `5.762 µT / sqrt(Hz)`
-
-## Important limitation
-
-The raw **full magnetic-field map** and associated height map used in the original magnetic-stripe calibration script were **not fully recoverable** from the accessible material. The repo therefore preserves the original calibration logic and now also includes the original internship report, but it still does not pretend to fully reproduce the final stripe-fit / flight-height extraction from scratch.
-
-## Why this repo is useful now
-
-This cleaned repository is suitable for:
-
-- showing that you already worked on NV centers experimentally,
-- revisiting the internship with a cleaner research workflow,
-- sharing a credible technical archive with collaborators,
-- extracting a concise technical narrative for future discussions about quantum sensing.
