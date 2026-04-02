@@ -1,4 +1,4 @@
-# NV-center internship archive and clean re-analysis
+# NV-center internship archive
 
 This repository reorganizes a first-year Master's internship on **NV-center-based quantum sensing**.
 
